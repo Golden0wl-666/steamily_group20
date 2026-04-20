@@ -13,7 +13,7 @@ from pandas.tseries.holiday import USFederalHolidayCalendar
 
 def warmup():
     try:
-        requests.get("https://crime-forecast-api.onrender.com", timeout=10)
+        requests.get("https://crime-forecast-api.onrender.com", timeout=30)
     except:
         pass
 
