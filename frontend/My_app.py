@@ -11,9 +11,13 @@ import plotly.express as px
 
 from pandas.tseries.holiday import USFederalHolidayCalendar
 
-# =========================
-# API config
-# =========================
+def warmup():
+    try:
+        requests.get("https://crime-forecast-api.onrender.com", timeout=10)
+    except:
+        pass
+
+warmup()
 import os
 import streamlit as st
 
