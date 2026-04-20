@@ -1,0 +1,41 @@
+{
+  "source_meta": "/Users/youmaowei/Workspace/PythonProject/Chicago/Team20_IT5006_Predictive_Policing_AY2526Sem2/project-root/stgcn/artifacts/data_v2/meta.json",
+  "fields_used": {
+    "lookback": 180,
+    "train_end": 17522,
+    "val_end": 19690,
+    "n_steps": 21858,
+    "n_grids": 1505,
+    "n_types": 5
+  },
+  "prediction_rule": "Predict y[t] using x[t-lookback:t].",
+  "time_step_ranges": {
+    "train_target_t": [
+      180,
+      17521
+    ],
+    "val_target_t": [
+      17522,
+      19689
+    ],
+    "test_target_t": [
+      19690,
+      21857
+    ]
+  },
+  "target_counts_full": {
+    "train": 17342,
+    "val": 2168,
+    "test": 2168
+  },
+  "dataset_lengths_after_sampling": {
+    "train": 17342,
+    "val": 2168,
+    "test": 2168
+  },
+  "notes": {
+    "slots_per_day": 6,
+    "lookback_days": 30,
+    "explanation": "With lookback=180, model uses previous 30 days to predict the next slot (same slot on day 31)."
+  }
+}

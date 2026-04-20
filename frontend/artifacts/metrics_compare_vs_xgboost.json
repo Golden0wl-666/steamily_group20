@@ -1,0 +1,22 @@
+{
+  "stgcn": {
+    "avg_val_mae": 0.045593073964118956,
+    "avg_val_rmse": 0.11711219620759653,
+    "avg_test_mae": 0.04559174869209528,
+    "avg_test_rmse": 0.11645085798384877,
+    "avg_val_acc": 0.9923068936877076,
+    "avg_test_acc": 0.9922591362126246
+  },
+  "xgboost_reference": {
+    "avg_val_mae": 0.016703589260578154,
+    "avg_val_rmse": 0.10277261235879065,
+    "avg_test_mae": 0.01546767819672823,
+    "avg_test_rmse": 0.09926335755588551
+  },
+  "delta_stgcn_minus_xgboost": {
+    "avg_val_mae": 0.028889484703540802,
+    "avg_val_rmse": 0.014339583848805876,
+    "avg_test_mae": 0.03012407049536705,
+    "avg_test_rmse": 0.017187500427963256
+  }
+}
