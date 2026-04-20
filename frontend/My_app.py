@@ -90,7 +90,7 @@ def api_predict(day_index: int, slot_index: int | None, aggregate: str):
         "slot_index": slot_index,
         "aggregate": aggregate,
     }
-    resp = requests.post(f"{API_BASE}/predict", json=payload, timeout=60)
+    resp = requests.post(f"{API_BASE}/predict", json=payload, timeout=180)
     resp.raise_for_status()
     return resp.json()
 
